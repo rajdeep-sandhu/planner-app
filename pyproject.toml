@@ -22,3 +22,19 @@ build-backend = "uv_build"
 dev = [
     "pytest>=9.1.1",
 ]
+
+[tool.marimo.completion]
+signature_hint_on_typing = true
+
+[tool.marimo.package_management]
+manager = "uv"
+
+[tool.marimo.display]
+default_width = "full"
+
+[tool.marimo.save]
+format_on_save = true
+
+[tool.marimo.runtime]
+auto_instantiate = true
+auto_reload = "autorun"
