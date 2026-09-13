@@ -12,7 +12,7 @@ class ConfigLists:
         self.gammon_plan_workbook: Path = (
             Path(__file__).parent / "dev_data" / "Gammon_Plan_XL_V3_DEMO_WIP.xlsm"
         )
-        self.config_lists: dict[str, list] = self._load_lists_from_excel()
+        self.lists: dict[str, list] = self._load_lists_from_excel()
 
     def _load_lists_from_excel(self) -> dict[str, list]:
         """
