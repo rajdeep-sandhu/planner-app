@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from planner-app!")
+# __init__.py
