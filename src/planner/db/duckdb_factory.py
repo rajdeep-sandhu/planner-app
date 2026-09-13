@@ -8,7 +8,12 @@ class DuckDBFactory:
     """
 
     def __init__(self, database: str = ":memory:") -> None:
-        """DuckDBFactory Constructor."""
+        """
+        DuckDBFactory Constructor.
+
+        Args:
+        database (str): DuckDB database filename. Defaults to ":memory:".
+        """
         self._database: str = database
 
     def create_connection(self) -> duckdb.DuckDBPyConnection:
